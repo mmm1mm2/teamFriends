@@ -1,51 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<<<<<<< HEAD
 
 <head>
-	<title>1問目</title>
-=======
-<head>
 	<title>Quiz</title>
->>>>>>> 775078cc81bb51af21c49f13f792705bc6e45a03
 	<meta charset="utf-8" />
 </head>
 
 <body>
-<<<<<<< HEAD
-	<h1><span th:text="${title}"></span></h1>
-
-	<div th:object="${form}">
-
-		<p>問題</p>
-		<p th:text="*{name1}"></p>
-		
-
-		<form method="get" action="#" th:action="@{/form}">
-			<input type="hidden" name="name1" th:value="*{name1}">
-			<input type="hidden" name="age1" th:value="*{age1}">
-			<input type="submit" value="入力画面へ">
-		</form>
-
-		<form method="get" action="#" th:action="@{/complete}">
-			<input type="hidden" name="name1" th:value="*{name1}">
-			<input type="hidden" name="age1" th:value="*{age1}">
-			<input type="submit" value="完了画面へ">
-		</form>
-
-	</div>
-</body>
-
-=======
-	  <h1>Q1.問題文	問題文	問題文	問題文	問題文	問題文</h1>
-	  <form>
+	<h1>Q1.問題文 問題文 問題文 問題文 問題文 問題文</h1>
+	<form>
 		<input type="submit" value="選択肢１">
-	  </form>
-	  
-	  <form>
-	  		<input type="submit" value="選択肢２">
-	  </form>
-	
+	</form>
+
+	<form>
+		<input type="submit" value="選択肢２">
+	</form>
+
 </body>
->>>>>>> 775078cc81bb51af21c49f13f792705bc6e45a03
+
 </html>
