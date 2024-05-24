@@ -6,11 +6,11 @@ public class Quiz {
 
 		public Quiz() {}
 
-		public String getQuestion1() {
-			return getQuestion1();
+		public String getQuestion() {
+			return getQuestion();
 		}
-		public void setquestion1(String question1) {
-			this.question1 = question1;
+		public void setquestion(String question) {
+			this.question = question;
 		}
 }
 	
