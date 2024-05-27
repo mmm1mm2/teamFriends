@@ -15,15 +15,15 @@
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
-		<input type="submit" value="選択肢２">
+		<input type="submit" th:value="${res.name}" th:each="res : ${dbList}" >
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
-		<input type="submit" value="選択肢３">
+		<input type="submit" th:value="${res.name}" th:each="res : ${dbList}" >
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
-		<input type="submit" value="選択肢４">
+		<input type="submit" th:value="${res.name}" th:each="res : ${dbList}" >
 	</form>
 
 

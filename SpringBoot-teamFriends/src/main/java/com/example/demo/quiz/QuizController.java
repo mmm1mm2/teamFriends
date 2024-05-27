@@ -33,11 +33,6 @@ public class QuizController {
 		
 		List<EntQuiz> list = quizdao.searchDb();
 		model.addAttribute("dbList",list);
-		
-		
-//		model.addAttribute("dbList",quizdao.mondai());
-		
-		
 		model.addAttribute("message","問題");
 		return "quiz/quiz1";
 	}
