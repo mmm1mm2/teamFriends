@@ -7,7 +7,13 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 	<h1>Q1.問題文 </h1>
+=======
+	<h1 th:text="${message}"></h1>
+	
+	<h1>Q1.問題文 問題文 問題文 問題文 問題文 問題文</h1>
+>>>>>>> 55d0c752a264e7bdf46afc0ae9e6c2c5298f3e6c
 	<form method="get" action="#" th:action="@{/right}">
 		<input type="submit" value="選択肢１">
 	</form>
@@ -16,12 +22,25 @@
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
+<<<<<<< HEAD
 		<input type="submit" value="選択肢３">
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢４">
 	</form>
+=======
+		<input type="submit" value="選択肢２"> 
+	</form>
+	
+	  <form method="get" action="#" th:action="@{/wrong}">
+		<input type="submit" value="選択肢３">
+	  </form>
+	  
+	  <form method="get" action="#" th:action="@{/wrong}">
+		<input type="submit" value="選択肢４">
+	  </form>
+>>>>>>> 55d0c752a264e7bdf46afc0ae9e6c2c5298f3e6c
 </body>
 
 </html>
