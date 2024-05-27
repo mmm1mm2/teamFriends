@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.dao.QuizDao;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -20,6 +21,9 @@ public class QuizController {
 
 =======
 import com.example.demo.entity.Entquiz;
+=======
+import com.example.demo.entity.EntQuiz;
+>>>>>>> a1d260f54034411e8ce40111963a339030fd18a0
 
 @Controller
 public class QuizController {
@@ -49,7 +53,7 @@ public class QuizController {
 	@RequestMapping("/quiz1")
 	public String quiz1(Model model) {
 		
-		List<Entquiz> list = quizdao.searchDb();
+		List<EntQuiz> list = quizdao.searchDb();
 		model.addAttribute("dbList",list);
 		
 		
