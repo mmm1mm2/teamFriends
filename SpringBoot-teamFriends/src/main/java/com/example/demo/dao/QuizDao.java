@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -35,7 +34,6 @@ public class QuizDao {
 
 	private final JdbcTemplate db;
 
-	@Autowired
 	public QuizDao(JdbcTemplate db) {
 		this.db = db;
 	}
