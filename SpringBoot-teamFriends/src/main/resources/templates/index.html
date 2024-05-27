@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
 	<title>start</title>
 	<meta charset="utf-8" />
 </head>
-
 <body>
 	<h1 th:text="${title}"></h1>
-	<a href="quiz/quiz1.html" th:href="@{/quiz/quiz1.html}">スタート</a>
-
+	<form method="get" action="#" th:action="@{/quiz1}">
+		<input type="submit" value="スタート">
+	</form>
 </body>
-
 </html>

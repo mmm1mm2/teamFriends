@@ -1,2 +1,1 @@
-INSERT INTO sample (name,question) VALUES ('髙橋大貴','買ったばっかりのカーディガンをリップクリームと一緒に洗濯をしてしまい、シミができてしまった可哀そうな人は誰？');
-INSERT INTO sample (name,question) VALUES ('川岸小雪','雨の次の日にいつも履いてる靴が乾かなくて、銀色の靴を履いてきたまぶしかった人は誰？');
+INSERT INTO sample (name,question) VALUES ('test','testな人は誰？');
