@@ -33,11 +33,7 @@ public class QuizDao {
 		return resultDb2;
 	}
 
-	//	public String mondai() {
-	//		String sql = "SELECT question FROM sample where id=1";
-	//		String resultDb1 = db.queryForList(sql);
-	//		return resultDb1;
-	//	}
+
 	private final JdbcTemplate db;
 
 	@Autowired
