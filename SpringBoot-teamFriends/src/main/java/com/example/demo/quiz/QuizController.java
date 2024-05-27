@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.demo.dao.QuizDao;
 import com.example.demo.entity.EntQuiz;
 
+
 @Controller
 public class QuizController {
 	
@@ -23,10 +24,9 @@ public class QuizController {
 	
 	@RequestMapping("/index")
 	public String start(Model model) {
-		model.addAttribute("title","この人誰だろな？");
+		model.addAttribute("title", "この人誰だろな？");
 		return "index";
-	}
-	
+	}	
 	
 	@RequestMapping("/quiz1")
 	public String quiz1(Model model) {
@@ -40,20 +40,19 @@ public class QuizController {
 		
 		model.addAttribute("message","問題");
 		return "quiz/quiz1";
-	
-		
-		
 	}
 
-	
 	@RequestMapping("/right")
 	public String right(Model model) {
 		return "quiz/right";
 	}
-	
+
 	@RequestMapping("/wrong")
 	public String wrong(Model model) {
 		return "quiz/wrong";
 	}
-
+	
+	
 }
+
+

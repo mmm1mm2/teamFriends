@@ -7,28 +7,26 @@
 </head>
 
 <body>
-	<h1 th:text="${message}"></h1>
-	
+
 	<h1 th:each="res : ${dbList}" th:text="${res.question}"></h1>
+
 	<form method="get" action="#" th:action="@{/right}">
 		<input type="submit" value="選択肢１">
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
-		<input type="submit" value="選択肢２"> 
+		<input type="submit" value="選択肢２">
 	</form>
-	
-	  <form method="get" action="#" th:action="@{/wrong}">
+
+	<form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢３">
-	  </form>
-	  
-	  <form method="get" action="#" th:action="@{/wrong}">
+	</form>
+
+	<form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢４">
-	  </form>
-	  
-	 
-	  
-	  
+	</form>
+
+
 </body>
 
 </html>
