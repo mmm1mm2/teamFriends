@@ -13,12 +13,13 @@ import com.example.demo.entity.EntQuiz;
 public class QuizDao {
 
 	public List<EntQuiz> searchDb() {
-		String sql = "SELECT question FROM sample where id=1";
-		//データベースから取り出したデータをresultDB1に入れる
-		List<Map<String, Object>> resultDb1 = db.queryForList(sql);
+		//データベースからランダムで１つ取り出し、resultDB1に入れる（重複あり）
+		String sql = "	SELECT * FROM sample ORDER BY RAND() LIMIT 1;";
 		//画面に表示しやすい形のList(resultDB2)を用意
-		List<EntQuiz> resultDb2 = new ArrayList<EntQuiz>();
+		List<Map<String, Object>> resultDb1 = db.queryForList(sql);
 		//1件ずつピックアップ
+		List<EntQuiz> resultDb2 = new ArrayList<EntQuiz>();
+
 		for (Map<String, Object> result1 : resultDb1) {
 			//データ1件分を1つのまとまりとしたEntForm型の「entformdb」を生成
 			EntQuiz entformdb = new EntQuiz();
@@ -38,8 +39,25 @@ public class QuizDao {
 		this.db = db;
 	}
 
-	public void insertDb(EntQuiz entQuiz) {
-		db.update("INSERT INTO sample (name, question) VALUES(? ,?)", entQuiz.getName(), entQuiz.getQuestion());
-	}
+	
+	// 重複を避けるための問題リスト
+	private List<Integer> usedQuestions = new ArrayList<>();
 
+	// 重複のないランダムな問題を取得
+	public EntQuiz getUniqueRandomQuestion() {
+		// データベースからランダムに1つの問題を取得
+		String sql = "SELECT * FROM sample ORDER BY RAND() LIMIT 1";
+		Map<String, Object> result = db.queryForMap(sql);
+
+		// 取得したデータをEntQuizオブジェクトにマッピング
+		EntQuiz question = new EntQuiz();
+		question.setId((Integer) result.get("id"));
+		question.setName((String) result.get("name"));
+		question.setQuestion((String) result.get("question"));
+
+		// 使用した問題のIDをリストに追加して重複を避ける
+		usedQuestions.add(question.getId());
+
+		return question;
+	}
 }
