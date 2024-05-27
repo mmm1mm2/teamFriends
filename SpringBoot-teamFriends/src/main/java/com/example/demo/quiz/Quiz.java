@@ -13,8 +13,6 @@ public class Quiz {
 		public void setQuestion1(String question1) {
 			this.question1 = question1;
 		}
-
-	
 }
 	
 
