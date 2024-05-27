@@ -4,6 +4,13 @@ public class EntQuiz {
 
 	String name;
 	String question;
+	int id;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -16,8 +23,6 @@ public class EntQuiz {
 	public void setQuestion(String question) {
 		this.question = question;
 	}
-	
-	
 	
 	
 }
