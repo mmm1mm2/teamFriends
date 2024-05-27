@@ -1,11 +1,25 @@
 package com.example.demo.quiz;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.demo.dao.QuizDao;
+import com.example.demo.entity.Entquiz;
+
 @Controller
 public class QuizController {
+	
+	//QuizDaoの用意
+	private final QuizDao quizdao;
+	
+	@Autowired
+	public QuizController(QuizDao quizdao) {
+	this.quizdao = quizdao;
+	}
 	
 	@RequestMapping("/index")
 	public String start(Model model) {
@@ -13,11 +27,24 @@ public class QuizController {
 		return "index";
 	}
 	
+	
 	@RequestMapping("/quiz1")
 	public String quiz1(Model model) {
-		model.addAttribute("message","問題文");
+		
+		List<Entquiz> list = quizdao.searchDb();
+		model.addAttribute("dbList",list);
+		
+		
+//		model.addAttribute("dbList",quizdao.mondai());
+		
+		
+		model.addAttribute("message","問題");
 		return "quiz/quiz1";
+	
+		
+		
 	}
+
 	
 	@RequestMapping("/right")
 	public String right(Model model) {
