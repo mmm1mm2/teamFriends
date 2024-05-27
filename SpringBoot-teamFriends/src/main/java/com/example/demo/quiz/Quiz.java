@@ -2,15 +2,15 @@ package com.example.demo.quiz;
 
 public class Quiz {
 	
-		private String question;
+		private String question1;
 
 		public Quiz() {}
 
-		public String getQuestion() {
-			return getQuestion();
+		public String getQuestion1() {
+			return getQuestion1();
 		}
-		public void setquestion(String question) {
-			this.question = question;
+		public void setquestion1(String question1) {
+			this.question1 = question1;
 		}
 }
 	
