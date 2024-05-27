@@ -12,8 +12,12 @@
 =======
 	<h1 th:text="${message}"></h1>
 	
+<<<<<<< HEAD
 	<h1>Q1.問題文 問題文 問題文 問題文 問題文 問題文</h1>
 >>>>>>> 55d0c752a264e7bdf46afc0ae9e6c2c5298f3e6c
+=======
+	<h1 th:each="res : ${dbList}" th:text="${res.question}"></h1>
+>>>>>>> 9b4b203e883f622f354ffa7e84a47cf12099dee6
 	<form method="get" action="#" th:action="@{/right}">
 		<input type="submit" value="選択肢１">
 	</form>
@@ -40,7 +44,14 @@
 	  <form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢４">
 	  </form>
+<<<<<<< HEAD
 >>>>>>> 55d0c752a264e7bdf46afc0ae9e6c2c5298f3e6c
+=======
+	  
+	 
+	  
+	  
+>>>>>>> 9b4b203e883f622f354ffa7e84a47cf12099dee6
 </body>
 
 </html>
