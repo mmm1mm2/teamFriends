@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.dao.QuizDao;
-import com.example.demo.entity.Entquiz;
+import com.example.demo.entity.EntQuiz;
 
 @Controller
 public class QuizController {
@@ -31,7 +31,7 @@ public class QuizController {
 	@RequestMapping("/quiz1")
 	public String quiz1(Model model) {
 		
-		List<Entquiz> list = quizdao.searchDb();
+		List<EntQuiz> list = quizdao.searchDb();
 		model.addAttribute("dbList",list);
 		
 		

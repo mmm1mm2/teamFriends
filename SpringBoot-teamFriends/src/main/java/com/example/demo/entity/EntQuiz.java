@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-public class Entquiz {
+public class EntQuiz {
 	private String name;
 	private String question;
 	
@@ -16,6 +16,4 @@ public class Entquiz {
 	public void setQuestion(String question) {
 		this.question = question;
 	}
-	
-
 }
