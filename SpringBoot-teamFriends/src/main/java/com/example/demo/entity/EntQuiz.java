@@ -4,6 +4,7 @@ public class EntQuiz {
 
 	String name;
 	String question;
+<<<<<<< HEAD
 	int id;
 	public int getId() {
 		return id;
@@ -11,6 +12,8 @@ public class EntQuiz {
 	public void setId(int id) {
 		this.id = id;
 	}
+=======
+>>>>>>> master
 	public String getName() {
 		return name;
 	}
@@ -25,4 +28,8 @@ public class EntQuiz {
 	}
 	
 	
+<<<<<<< HEAD
+=======
+	
+>>>>>>> master
 }

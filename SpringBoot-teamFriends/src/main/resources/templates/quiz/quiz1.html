@@ -9,7 +9,15 @@
 <body>
 
 	<h1 th:each="res : ${dbList}" th:text="${res.question}"></h1>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+	
+>>>>>>> 86db643527d19061010c1bd0264905d50adfdc23
+>>>>>>> master
 	<form method="get" action="#" th:action="@{/right}">
 		<input type="submit" th:value="${res.name}" th:each="res : ${dbList}" >
 	</form>
