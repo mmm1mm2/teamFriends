@@ -1,0 +1,1 @@
+INSERT INTO sample (name,question) VALUES ('test','testQuestion');
