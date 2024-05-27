@@ -8,19 +8,19 @@
 
 <body>
 	<h1>Q1.問題文 問題文 問題文 問題文 問題文 問題文</h1>
-	<form>
+	<form method="get" action="#" th:action="@{/right}">
 		<input type="submit" value="選択肢１">
 	</form>
 
-	<form>
-		<input type="submit" value="選択肢２">
+	<form method="get" action="#" th:action="@{/wrong}">
+		<input type="submit" value="選択肢２"> 
 	</form>
 	  
-	  <form>
+	  <form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢３">
 	  </form>
 	  
-	  <form>
+	  <form method="get" action="#" th:action="@{/wrong}">
 		<input type="submit" value="選択肢４">
 	  </form>
 </body>
