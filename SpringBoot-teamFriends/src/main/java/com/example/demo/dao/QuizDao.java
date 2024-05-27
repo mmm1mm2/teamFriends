@@ -14,7 +14,7 @@ import com.example.demo.entity.EntQuiz;
 public class QuizDao {
 
 	public List<EntQuiz> searchDb() {
-		String sql = "SELECT question FROM sample where id=1";
+		String sql = "SELECT * FROM sample where id=1";
 		//データベースから取り出したデータをresultDB1に入れる
 		List<Map<String, Object>> resultDb1 = db.queryForList(sql);
 		//画面に表示しやすい形のList(resultDB2)を用意
