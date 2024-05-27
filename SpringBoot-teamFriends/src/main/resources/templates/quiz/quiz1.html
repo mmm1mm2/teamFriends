@@ -11,7 +11,7 @@
 	<h1 th:each="res : ${dbList}" th:text="${res.question}"></h1>
 
 	<form method="get" action="#" th:action="@{/right}">
-		<input type="submit" value="選択肢１" >
+		<input type="submit" th:value="${res.name}" >
 	</form>
 
 	<form method="get" action="#" th:action="@{/wrong}">
