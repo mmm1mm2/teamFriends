@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -33,14 +32,8 @@ public class QuizDao {
 		return resultDb2;
 	}
 
-	//	public String mondai() {
-	//		String sql = "SELECT question FROM sample where id=1";
-	//		String resultDb1 = db.queryForList(sql);
-	//		return resultDb1;
-	//	}
 	private final JdbcTemplate db;
 
-	@Autowired
 	public QuizDao(JdbcTemplate db) {
 		this.db = db;
 	}
