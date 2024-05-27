@@ -1,11 +1,9 @@
 package com.example.demo.entity;
 
 public class EntQuiz {
-<<<<<<< HEAD
 
 	private int id;
-=======
->>>>>>> a1d260f54034411e8ce40111963a339030fd18a0
+
 	private String name;
 
 	public EntQuiz() {};
@@ -26,11 +24,5 @@ public class EntQuiz {
 		this.name = name;
 	}
 	
-	public int getQuestion() {
-		return question;
-	}
-
-	public void setQuestion(String question) {
-		this.question = question;
-	}
+	
 }
