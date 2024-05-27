@@ -32,17 +32,6 @@ public class QuizDao {
 		//Controllerに渡す
 		return resultDb2;
 	}
-<<<<<<< HEAD
-=======
-	
-	
-//	public String mondai() {
-//		String sql = "SELECT question FROM sample where id=1";
-//		String resultDb1 = db.queryForList(sql);
-//		return resultDb1;
-//	}
->>>>>>> 86db643527d19061010c1bd0264905d50adfdc23
-
 	//	public String mondai() {
 	//		String sql = "SELECT question FROM sample where id=1";
 	//		String resultDb1 = db.queryForList(sql);
